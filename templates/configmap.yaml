@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: "{{ .Release.Name }}-configmap"
   labels:
-    app: {{ .Values.app.name }}
+    app: "{{ .Values.app.name }}"
 data:
   index.html: |
     <html>

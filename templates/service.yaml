@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: "{{ .Release.Name }}-service"
   labels:
-    app: {{ .Values.app.name }}
+    app: "{{ .Values.app.name }}"
 spec:
-  type: {{ .Values.service.type }}
+  type: "{{ .Values.service.type }}"
   ports:
     - port: {{ .Values.service.port }}
   selector:
-    app: {{ .Values.app.name }}
+    app: "{{ .Values.app.name }}"
