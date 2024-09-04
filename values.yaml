@@ -1,0 +1,19 @@
+app:
+  name: myapp
+
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: latest
+
+service:
+  type: LoadBalancer # ClusterIP
+  port: 80
+
+secretUsername: "admin"
+secretPassword: "password"
+
+index:
+  title: "Hello, Vault ArgoCD!"
+  message: "This is a test for argocd secret Injection with ArgoCD Vault Plugin."

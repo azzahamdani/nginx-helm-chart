@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ .Release.Name }}-configmap"
+  labels:
+    app: {{ .Values.app.name }}
+data:
+  index.html: |
+    <html>
+    <head><title>Welcome to Nginx!</title></head>
+    <body>
+    <h1>{{ .Values.index.title }}</h1>
+    <p>{{ .Values.index.message }}</p>
+    </body>
+    </html>
