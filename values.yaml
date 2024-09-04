@@ -11,8 +11,8 @@ service:
   type: LoadBalancer # ClusterIP
   port: 80
 
-secretUsername: "admin"
-secretPassword: "password"
+# secretUsername: "admin"
+# secretPassword: "password"
 
 index:
   title: "Hello, Vault ArgoCD!"
