@@ -11,6 +11,10 @@ service:
   type: LoadBalancer # ClusterIP
   port: 80
 
+vault: 
+  username: <username>
+  password: <password>
+
 index:
   title: "Hello, Vault ArgoCD!"
   message: "This is a test for argocd secret Injection with ArgoCD Vault Plugin"
